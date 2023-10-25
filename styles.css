@@ -1,0 +1,283 @@
+body {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    background-color: yellow;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    margin-left: 5%;
+}
+
+li a {
+    text-decoration: none;
+    color: red;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 2%;
+}
+
+li {
+    padding: 8%;
+}
+
+.hamburger {
+    display: none;
+}
+
+header a {
+    text-decoration: none;
+    color: red;
+}
+
+
+/* Intro */
+
+.intro {
+    background-image:url("Jokers-mascot.jpg");
+    background-size: cover;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+.intro-title {
+    font-size: 350%;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.intro h2 {
+    font-size: 200%;
+}
+
+.intro-sub {
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+button {
+    font-size: 150%;
+    padding: 0.7%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.intro a {
+    text-decoration: none;
+    color: red;
+}
+
+.hamburger {
+    display: 
+}
+
+/* Location */
+iframe {
+    width: 90%;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-link {
+    margin-bottom: 2%; 
+}
+
+.location1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* Gallery */
+
+.gal-title {
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.gal-top3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin: 0 2.5%;
+}
+
+.gal-top3 img {
+    width: 100%;
+    height: 90%;
+}
+
+.gal-bottom-img img{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Upcoming Games */
+
+.games-title {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.upcoming {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+    margin: auto;
+}
+
+.upcoming img {
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.upcoming p {
+    font-size: 100%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Players */
+
+.players {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    background-color: red;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+.players img {
+    width: 40%;
+}
+
+.players-title {
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.players h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 200%;
+}
+
+/* Footer */
+
+footer {
+    background-color: yellow;
+    padding: 3%;
+    font-size: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* RESPONSIVENESS */
+
+@media all and (max-width: 600px) {
+    
+    /* HEADER */
+
+    .nav {
+        display: none;
+    }
+    
+    .hamburger {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .hamburger-content {
+        display: none;
+        position: absolute;
+        right:0;
+        z-index:1;
+      }
+
+      .hamburger-content ul {
+        flex-direction: column;
+      }
+
+      .hamburger-content ul li {
+        background-color: yellow;
+        border-bottom: 1px solid blue;
+        width:100%;
+      }
+
+      .hamburger:hover .hamburger-content {
+        display: block;
+      /* animation: popup .5s ease-in-out both; */
+      }
+      
+      .hamburger span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: block;
+        transform: rotate(90deg);
+      }
+      
+      .hamburger:hover span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: block;
+        transform: rotate(180deg);
+      }
+
+      /* UPCOMING */
+
+      .upcoming {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 3%;
+            margin: auto;
+        }
+
+        .upcoming img {
+            width: 50%;
+        }
+
+        /* PLAYERS */
+
+        .players {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .players-title {
+        margin-top: 85%;
+        margin-bottom: 10%;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

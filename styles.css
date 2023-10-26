@@ -109,6 +109,10 @@ iframe {
     justify-content: space-between;
 }
 
+.location h2 {
+    margin-bottom: 5%;
+}
+
 /* Gallery */
 
 .gal-title {
@@ -143,7 +147,7 @@ iframe {
 .upcoming {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3%;
+    grid-gap: 3vw;
     margin: auto;
 }
 
@@ -165,7 +169,7 @@ iframe {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     background-color: red;
-    margin-top: 3%;
+    margin-top: 1%;
     padding: 1%;
 }
 
@@ -174,8 +178,8 @@ iframe {
 }
 
 .players-title {
-    margin-top: 20%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .players h3 {
